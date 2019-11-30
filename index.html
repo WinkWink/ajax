@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX Example index</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+</head>
+<body>
+<h3>Select Your Favorite Fruit</h3>
+<!-- prompt: select your favorite fruit -->
+<form id="ajax-fruit" method="post" action="form.php">
+	<select name="fruit" form="fruitform">
+  		<option value="apple">Apple</option>
+  		<option value="banana">Banana</option>
+  		<option value="orange">Orange</option>
+  		<option value="grapes">Grapes</option>
+  		<option value="kiwi">Kiwi</option>
+  		<option value="pineapple">Pineapple</option>
+  		<option value="cantelope">Cantelope</option>
+  		<option value="watermelon">Watermelon</option>
+	</select>
+	<!-- submit -->
+	<input type="submit" name="submit" id="submit">	
+</form>
+<div id="form-messages"></div>
+<!-- graph displaying food nutrition facts -->
+<div id="fruit-graph"></div>
+<script type="text/javascript" src="fruits.json"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
