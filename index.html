@@ -6,23 +6,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 </head>
 <body>
-<h3>Select Your Favorite Fruit</h3>
+<h3>Select Your Favorite Fruit to View Nutritional Facts</h3>
 <!-- prompt: select your favorite fruit -->
-<form id="ajax-fruit" method="post" action="form.php">
-	<select name="fruit" form="fruitform">
-  		<option value="apple">Apple</option>
-  		<option value="banana">Banana</option>
-  		<option value="orange">Orange</option>
-  		<option value="grapes">Grapes</option>
-  		<option value="kiwi">Kiwi</option>
-  		<option value="pineapple">Pineapple</option>
-  		<option value="cantelope">Cantelope</option>
-  		<option value="watermelon">Watermelon</option>
+<form id="ajax-fruit" method="post" action="script.js">
+	<select name="fruit" form="fruitform" id="fruit">
+  		<option id="fruit-input" value="apple">Apple</option>
+  		<option id="fruit-input" value="banana">Banana</option>
+  		<option id="fruit-input" value="orange">Orange</option>
+  		<option id="fruit-input" value="grapes">Grapes</option>
+  		<option id="fruit-input" value="kiwi">Kiwi</option>
+  		<option id="fruit-input" value="pineapple">Pineapple</option>
+  		<option id="fruit-input" value="cantelope">Cantelope</option>
+  		<option id="fruit-input" value="watermelon">Watermelon</option>
 	</select>
 	<!-- submit -->
-	<input type="submit" name="submit" id="submit">	
+	<input type="submit" name="submit" value="submit">	
 </form>
-<div id="form-messages"></div>
 <!-- graph displaying food nutrition facts -->
 <div id="fruit-graph"></div>
 <script type="text/javascript" src="fruits.json"></script>
